@@ -9,8 +9,8 @@
           \_____\___________________,-~~~~~~~`-.._
           /     o o o o o o o o o o o o o o o o  |\_
           `~-.__       __..----..__                  )
-                `---~~\___________/------------`````
-                =  ===(_________)
+                `---~~\___________/------------``.``.`
+                ======(_________)
 
 ```
 
@@ -27,5 +27,6 @@ Also to assist the adoption of the program in random airports, we need to have t
 
 ## Things to improve
 
-* OVERALL COVERAGE:  99.40% -- 167/168 lines in 6 files
-* lib/hand_of_god.rb 75%
+* OVERALL COVERAGE:  99.40% -- 167/168 lines in 6 files, which is caused by no full code coverage from  ```
+ lib/hand_of_god.rb 75%
+ ```
