@@ -1,5 +1,5 @@
-require "plane"
-require "hand_of_god"
+require_relative "plane"
+require_relative "hand_of_god"
 
 class Airport
 
@@ -22,15 +22,19 @@ class Airport
   end
 
   def dock(plane)
+    raise "Plane is already docked" if @planes.include?(plane)
     raise "Weather Stormy!! Planes cannot land/dock" if stormy?
     raise "Airport is full, cannot land" if full?
     @planes << plane
+    "Plane has been docked"
   end
 
   def launch(plane)
+    raise "Plane is already in the air" unless @planes.include?(plane)
     raise "Weather Stormy!! Planes are Grounded" if stormy?
     raise "There are no planes in the airport" if empty?
     @planes.delete(plane)
+    "Plane has been launched"
   end
 
   def count_of_planes
