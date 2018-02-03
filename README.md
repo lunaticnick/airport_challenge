@@ -146,6 +146,4 @@ Airport default capacity of 5 planes can be overridden
 
 ## Things to improve
 
-* OVERALL COVERAGE:  99.40% -- 167/168 lines in 6 files, which is caused by no full code coverage from  ```
- lib/hand_of_god.rb 75%
- ```
+* OVERALL COVERAGE:  99.40% -- 167/168 lines in 6 files, which is caused by no full code coverage from  ```lib/hand_of_god.rb```
